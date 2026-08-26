@@ -1,5 +1,5 @@
 /**
- * Unit + load-path coverage for @deepseek-ai/dsh-waom. Pure helpers (probe,
+ * Unit + load-path coverage for @shizhanyu13/dsh-waom. Pure helpers (probe,
  * heuristicDecide, evaluate, buildFixPrompt) are covered directly with an
  * injected fetch; the cycle that drives `ctx.subagents.start` requires the
  * scripted-provider real-composition harness (deferred, see README Known
@@ -8,7 +8,7 @@
 
 import { describe, expect, it } from 'vitest'
 import Loader from '@deepseek-ai/cordis-plugin-loader'
-import * as waom from '@deepseek-ai/dsh-waom'
+import * as waom from '@shizhanyu13/dsh-waom'
 import {
   buildFixPrompt,
   evaluate,
@@ -16,7 +16,7 @@ import {
   probe,
   resolveParent,
   type WaomMonitor,
-} from '@deepseek-ai/dsh-waom'
+} from '@shizhanyu13/dsh-waom'
 
 const monitor: WaomMonitor = { id: 'svc', url: 'https://example/health', healthyCode: 200 }
 

@@ -1,6 +1,6 @@
 /**
- * Package-owned invariant companion for `@deepseek-ai/dsh-waom`.
- * @module @deepseek-ai/dsh-waom/invariant
+ * Package-owned invariant companion for `@shizhanyu13/dsh-waom`.
+ * @module @shizhanyu13/dsh-waom/invariant
  */
 import type { Context } from '@deepseek-ai/cordis';
 /** Cordis companion plugin name. */

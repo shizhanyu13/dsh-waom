@@ -12,7 +12,7 @@
  * or a configured `seedSessionId`. Creating a dedicated long-lived seed agent
  * via the agent-factory seam is deferred (see Known Limitations).
  *
- * @module @deepseek-ai/dsh-waom
+ * @module @shizhanyu13/dsh-waom
  */
 import type { Context } from '@deepseek-ai/cordis';
 import z from '@deepseek-ai/schemastery';

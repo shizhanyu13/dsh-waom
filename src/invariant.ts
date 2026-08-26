@@ -1,13 +1,13 @@
 /**
- * Package-owned invariant companion for `@deepseek-ai/dsh-waom`.
- * @module @deepseek-ai/dsh-waom/invariant
+ * Package-owned invariant companion for `@shizhanyu13/dsh-waom`.
+ * @module @shizhanyu13/dsh-waom/invariant
  */
 
 /* jscpd:ignore-start */
 import type { Context } from '@deepseek-ai/cordis'
 import type { InvariantInstaller } from '@deepseek-ai/dsh-invariants'
 
-const PACKAGE_NAME = '@deepseek-ai/dsh-waom'
+const PACKAGE_NAME = '@shizhanyu13/dsh-waom'
 
 /** Cordis companion plugin name. */
 export const name = 'waom-invariant'

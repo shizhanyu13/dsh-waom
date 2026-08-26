@@ -1,6 +1,19 @@
 {
-  "name": "@deepseek-ai/dsh-waom",
-  "description": "Ironbound WAOM autonomous-ops service plugin for the DeepSeek Harness — monitor targets, decide, drive a fix subagent (no claude -p), evaluate independently (GAN), notify; port of scripts/waom/waom-orchestrator.py",
+  "name": "@shizhanyu13/dsh-waom",
+  "description": "Ironbound WAOM autonomous-ops service plugin for the DeepSeek Harness (DSH). Monitors a target, decides a fix, drives a DSH subagent to implement it (no claude -p subprocess), and evaluates the result independently (GAN-style). Ported from scripts/waom/waom-orchestrator.py. Discoverable via the dsh-plugin topic.",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "plugin",
+    "cordis",
+    "auto-ops",
+    "autonomous",
+    "monitor",
+    "waom",
+    "subagent",
+    "self-healing"
+  ],
   "version": "0.1.0",
   "type": "module",
   "main": "lib/index.js",
