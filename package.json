@@ -37,6 +37,10 @@
     "README.md"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shizhanyu13/dsh-waom.git"
+  },
   "private": false,
   "publishConfig": {
     "access": "public"
