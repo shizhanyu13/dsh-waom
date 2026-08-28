@@ -2,11 +2,15 @@
 
 > **Autonomous ops for DeepSeek Harness.** Watch a target, decide a fix, drive a DSH subagent to implement it, and verify the result — **without shelling out to `claude -p`**.
 
+[![npm version](https://img.shields.io/npm/v/@shizhanyu13/dsh-waom?style=flat-square)](https://www.npmjs.com/package/@shizhanyu13/dsh-waom)
+[![npm downloads](https://img.shields.io/npm/dm/@shizhanyu13/dsh-waom?style=flat-square)](https://www.npmjs.com/package/@shizhanyu13/dsh-waom)
 [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen)](/LICENSE)
 [![dsh-plugin](https://img.shields.io/badge/dsh-plugin-topic-blue?logo=github)](https://github.com/topics/dsh-plugin)
 [![ESM](https://img.shields.io/badge/module-ESM-purple)](/package.json)
 [![Status: community port](https://img.shields.io/badge/status-community%20port%2C%20not%20official-orange)](#why-this-exists)
 [![Self-contained](https://img.shields.io/badge/deps-0%20runtime-brightgreen)](/package.json)
+
+> 🚀 **Install:** `npm install @shizhanyu13/dsh-waom` — then wire it into `cordis.patch.yml` (see Quickstart below).
 
 ---
 
