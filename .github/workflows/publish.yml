@@ -24,7 +24,10 @@ jobs:
       # npm may be older, so force a known OIDC-capable 11.x line.
       - name: Upgrade npm for OIDC
         run: npm install -g npm@11 --no-fund --no-audit
-      - run: npm install
+      - run: npm install --legacy-peer-deps
+      # Gate: the standalone repo can't rebuild the vendored bundle, so
+      # src typecheck is the reliable pre-publish sanity check.
+      - run: npm run typecheck
       # Idempotent publish: if the version is already on the registry (e.g. when
       # re-tagging after a release), skip instead of failing with E403.
       - name: Publish package (skip if version already on npm)
