@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Pending (release-carrier infra)
+- Consider adding `@deepseek-ai/dsh-session` to `peerDependencies` before the next release: `src` imports `SessionId` from it, and TS consumers may need the type to resolve.
+
 ## [0.1.1] - 2026-08-28
 
 ### Fixed

@@ -28,6 +28,10 @@ jobs:
       # Gate: the standalone repo can't rebuild the vendored bundle, so
       # src typecheck is the reliable pre-publish sanity check.
       - run: npm run typecheck
+      - name: Check package.json version matches CHANGELOG
+        run: |
+          VER="$(node -p "require('./package.json').version")"
+          grep -q "^## \[${VER}\]" CHANGELOG.md || { echo "CHANGELOG.md is missing an entry for v${VER}"; exit 1; }
       # Idempotent publish: if the version is already on the registry (e.g. when
       # re-tagging after a release), skip instead of failing with E403.
       - name: Publish package (skip if version already on npm)
